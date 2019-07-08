@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b9d6b8e.chunk.css",
+    "main.js": "/static/js/main.c49443f2.chunk.js",
+    "main.js.map": "/static/js/main.c49443f2.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.47374caa.chunk.js": "/static/js/2.47374caa.chunk.js",
+    "static/js/2.47374caa.chunk.js.map": "/static/js/2.47374caa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.83dbfa430c0b37183fa2f3f71b305390.js": "/precache-manifest.83dbfa430c0b37183fa2f3f71b305390.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2b9d6b8e.chunk.css.map": "/static/css/main.2b9d6b8e.chunk.css.map",
+    "static/media/270.svg": "/static/media/270.1ad3f26c.svg",
+    "static/media/AIR.svg": "/static/media/AIR.9b85c599.svg",
+    "static/media/AIRMAX.svg": "/static/media/AIRMAX.3823f6ef.svg",
+    "static/media/MAX.svg": "/static/media/MAX.d224a50b.svg",
+    "static/media/nike.svg": "/static/media/nike.c74df19d.svg",
+    "static/media/nikeL.png": "/static/media/nikeL.f4346719.png"
+  }
+}

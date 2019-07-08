@@ -1,0 +1,228 @@
+$bgColor: linear-gradient(135deg, #6c559d 10.4%, #3b2063 87.5%);
+$defaultPadding: 20px;
+
+@mixin test($color) {
+  border-style: solid;
+  border-color: $color;
+}
+
+@mixin alignRigth {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin alignMiddleCenter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@mixin alignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@mixin bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+html,
+body,
+#root,
+#app,
+.App,
+#app > div {
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  transition: all, 0.2s;
+}
+
+.App {
+  background-image: $bgColor;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#menu-container {
+  width: 100%;
+  height: fit-content;
+  padding: $defaultPadding;
+  position: relative;
+  z-index: 100;
+}
+
+#menu-container img {
+  width: 100%;
+  max-width: 200px;
+  @include alignMiddleCenter();
+  margin-top: 20px;
+}
+
+.menuItem {
+  height: 30px;
+  width: 40px;
+  padding: 0;
+}
+
+.menuItem span {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  width: fit-content;
+  color: #ffffff;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.menuItem span:hover {
+  color: #3b2063;
+}
+
+.menuItemContainer {
+  display: none;
+  width: 70%;
+  height: fit-content;
+  padding: 0;
+  @include alignMiddleCenter();
+  margin-top: 90px;
+}
+
+.bigLettersContainer {
+  @include alignMiddleCenter();
+  height: fit-content;
+  width: 80%;
+  transform: translateY(-40px);
+}
+
+#airLetters {
+  width: 15%;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+.airmaxIMG {
+  padding: 0 !important;
+}
+
+#airLetters img {
+  width: 100%;
+}
+
+#airMaxLetters {
+  width: 100%;
+  height: fit-content;
+}
+
+#airMaxLetters img {
+  width: 100%;
+}
+
+#maxLetters {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  margin-right: 25%;
+}
+
+#maxLetters img {
+  width: 100%;
+}
+
+#diagonalLine-container {
+  width: 100%;
+  height: 100%;
+  @include alignMiddleCenter();
+  overflow: hidden;
+}
+
+#diagonalLine {
+  @include alignMiddleCenter();
+  height: 100%;
+  width: 1px;
+  border-style: dashed;
+  border-width: 0.5px;
+  transform: rotate(45deg) scale(2);
+  border-color: white;
+}
+
+#nikers {
+  @include alignMiddleCenter();
+  width: 55%;
+  max-width: 370px;
+  transform: translateY(-22px);
+}
+
+#carrousellControls-container {
+  width: 100%;
+  height: 50px;
+  @include test(red);
+  @include alignMiddleCenter();
+  transform: translateY(100px);
+}
+
+.drawerText {
+  color: #3b2063;
+  font-size: 24px !important;
+}
+.menuButtom {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  color: white !important;
+  z-index: 100 !important;
+  outline: none !important;
+}
+
+#particlesContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include test(red);
+}
+
+#seeDetails {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(130px);
+  width: 220px;
+  outline: none;
+}
+
+#seeDetails span{
+  font-weight: bold;
+}
+
+@media only screen and (orientation: landscape) {
+  #carrousellControls-container {
+    width: 100%;
+    height: 50px;
+    @include test(red);
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .menuItemContainer {
+    display: block;
+  }
+}

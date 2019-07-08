@@ -1,0 +1,11 @@
+{
+  "name": "AirMaxNike",
+  "version": "1",
+  "main": "server.js",
+  "author": "Merli Mejia",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
